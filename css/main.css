@@ -49,6 +49,8 @@ html {
   height: 100%;
 }
 body {
+  
+  background-color: #66CC99;
   font-family: 'PT Sans', Helvetica, sans-serif;
   color: #666;
   margin: 0;
@@ -430,6 +432,7 @@ textarea.form-control, textarea.form-control:focus {
 
 .no-js body {
   overflow: auto;
+  
 }
 
 /*No Animation Support Message Style*/
@@ -960,7 +963,7 @@ ul.social-links li:last-child a {
   font-weight: 300;
   line-height: 1.1em;
   margin: 0 0 3px;
-  background-color: #9bd952;
+  background-color: #66CC99;
   padding: 5px 8px 5px 23px;
   margin-left: -23px;
 }
