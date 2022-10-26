@@ -770,7 +770,7 @@ ul.social-links li:last-child a {
 
 .info-list li .value {
   font-family: 'PT Sans';
-  min-width: 250px;
+  idth: 250px;
 }
 /* /About me list */
 
@@ -1282,7 +1282,7 @@ ul.social-links li:last-child a {
   position: absolute;
   bottom: -10px;
   right: 1em;
-  min-width: 44px;
+  idth: 44px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1806,6 +1806,11 @@ blockquote {
   border: 2px solid #ddd;
 }
 
+.header-reposive-mobile{
+  display: inline-flex;
+  align-items: flex-end;
+}
+
 .post-comments .media-footer,
 .post-comments .media-footer a {
   color: #888;
@@ -1820,7 +1825,7 @@ blockquote {
 .blog-post-content .divider {
   color: #d3d3d3;
   margin: 0 2px;
-  min-width: 5px;
+  idth: 5px;
 }
 
 .post-comments .light-gray {
@@ -1842,7 +1847,17 @@ blockquote {
   }
 }
 
+@media only screen and (min-width: 988px) {
+  .button-more {
+    display: none;
+  }
+  .header-reposive-mobile {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 991px) {
+
   .mobile-visible {
     display: block;
     visibility: visible;
@@ -1901,9 +1916,23 @@ blockquote {
     border-radius: 50%;
   }
 
+  .button-more {
+    background-color: #66CC97;
+    border: 1px solid #66CC97;
+  }
+
+  .add-menu-custom {
+    top: 50px;
+  }
+  .button-menu-cutom{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
   .site-main {
     position: absolute;
-    top: 50px;
+    /* top: 50px; */
     bottom: 0;
     width: 100%;
     height: auto;
@@ -2015,12 +2044,14 @@ blockquote {
 }
 
 @media only screen and (max-width: 769px) {
+
   .portfolio-grid figure {
     width: 50%;
   }
 }
 
 @media only screen and (max-width: 600px) {
+
   .blog-masonry .item {
     width: 100%;
   }

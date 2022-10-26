@@ -9,6 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       <meta name="description" content="Sunshine - Responsive vCard Template" />
       <meta name="author" content="lmtheme" />
+      <link href='https://css.gg/menu-grid-o.css' rel='stylesheet'>
       <link rel="shortcut icon" href="favicon.ico">
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/normalize.css">
@@ -59,6 +60,14 @@
             <img src="images/avt1234.png" height=""  alt="image">
             <div class="mask"></div>
          </div>
+         <div class="header-reposive-mobile">
+            <button class="button-more" onclick="handleClickMenu()" > 
+               <i class="gg-menu-grid-o"></i>
+            </button> 
+            <div>
+            <h5 style="margin-left: 45px;margin-bottom: 10px;">Nguyễn Phúc Thịnh<sup> +4 Years of Experience</sup></h5>
+            </div>
+         </div>
          <div class="site-title-block" style="font-weight: 800;">
             <h1 class="site-title" style="color: black">Nguyễn Phúc Thịnh</h1>
             <h3 >Web Developer</h3>
@@ -85,20 +94,20 @@
          <ul id="nav" class="site-main-menu">
             <!-- About Me Subpage link -->
             <li>
-               <a class="pt-trigger" href="#about_me" data-animation="58" data-goto="1">About me</a><!-- href value = data-id without # of .pt-page -->
+               <a class="pt-trigger" href="#about_me" data-animation="58" onclick="handleClickMenu()" data-goto="1">About me</a><!-- href value = data-id without # of .pt-page -->
             </li>
             <!-- /About Me Subpage link -->
             <li>
-               <a class="pt-trigger" href="#resume" data-animation="59" data-goto="2">Resume</a>
+               <a class="pt-trigger" href="#resume" data-animation="59" onclick="handleClickMenu()" data-goto="2">Resume</a>
             </li>
             <li>
-               <a class="pt-trigger" href="#portfolio" data-animation="60" data-goto="3">Project for me</a>
+               <a class="pt-trigger" href="#portfolio" data-animation="60" onclick="handleClickMenu()" data-goto="3">Project for me</a>
             </li>
             <li>
-               <a class="pt-trigger" href="#company" data-animation="60" data-goto="4">Image company for me</a>
+               <a class="pt-trigger" href="#company" data-animation="60" onclick="handleClickMenu()" data-goto="4">Image company for me</a>
             </li>
             <li>
-               <a class="pt-trigger" href="#contact" data-animation="58" data-goto="5">Contact</a>
+               <a class="pt-trigger" href="#contact" data-animation="58" onclick="handleClickMenu()" data-goto="5">Contact</a>
             </li>
          </ul>
          <!-- /Main menu -->
@@ -821,6 +830,21 @@
       <script src="js/jquery.magnific-popup.min.js"></script>
       <script src="js/jquery.hoverdir.js"></script>
       <script src="js/main.js"></script>
+
+      <script>
+         function handleClickMenu() {
+            var element = document.getElementsByClassName("site-main")[0];
+            var isHaveClass = document.getElementsByClassName('add-menu-custom');
+            if(isHaveClass.length > 0){
+               element.classList.remove("add-menu-custom");
+            } else {
+               element.classList.add("add-menu-custom");
+            }
+            
+}
+
+
+      </script>
       <!-- Demo Color changer Script -->
       <script src="preview/lmpixels-demo-panel.js"></script>
       <!-- /Demo Color changer Script -->
