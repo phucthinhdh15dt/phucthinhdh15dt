@@ -1027,7 +1027,7 @@ ul.social-links li:last-child a {
 }
 
 .skill-percentage {
-  background-color: #ffcd38;
+  background-color: #66CC99;
   border: 2px solid #fff;
   -moz-border-radius: 9px;
   -webkit-border-radius: 9px;
@@ -1919,6 +1919,7 @@ blockquote {
   .button-more {
     background-color: #66CC97;
     border: 1px solid #66CC97;
+    border-radius: 10px;
   }
 
   .add-menu-custom {
@@ -2028,7 +2029,9 @@ blockquote {
   }
 
   .mobile-menu-hide {
-    margin-top: -100%;
+    height: 100%;
+    margin-top: -200%;
+
   }
 
   .site-main-menu li {
@@ -2040,6 +2043,12 @@ blockquote {
     margin: 0;
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 770px) {
+  .mobile-avt {
+    display: none; /* hoặc display phù hợp như inline, flex, etc. */
   }
 }
 
@@ -2060,6 +2069,9 @@ blockquote {
 @media only screen and (max-width: 480px) {
   .portfolio-grid figure {
     width: 100%;
+  }
+    .mobile-avt {
+    display: block;
   }
 }
 

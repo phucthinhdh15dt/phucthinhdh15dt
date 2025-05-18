@@ -18,16 +18,6 @@
       <link rel="stylesheet" href="css/magnific-popup.css">
       <link rel="stylesheet" href="css/animate.css">
       <link rel="stylesheet" href="css/main.css" type="text/css">
-      <script>
-         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-         })(window,document,'script','../../../../../www.google-analytics.com/analytics.js','ga');
-         
-         ga('create', 'UA-92992662-1', 'auto');
-         ga('send', 'pageview');
-         
-      </script>
       <style>
          iframe {
          border: 1px solid white;
@@ -36,48 +26,112 @@
          .output {
          background: #eee;
          }
+
+         .header-responsive-mobile {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+            }
+
+            .button-more {
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            }
+
+            .user-info {
+            text-align: right;
+            }
+
+            .user-info h5 {
+            margin: 0;
+            font-size: 16px;
+            }
+
+            .user-info sup {
+               font-size: 12px;
+               color: #666;
+               top: -8px;
+            }
       </style>
-      <!-- This styles needs for demo -->
       <link rel="stylesheet" href="preview/lmpixels-demo-panel.css" type="text/css">
-      <!-- /This styles needs for demo -->
       <script src="js/jquery-2.1.3.min.js"></script>
       <script src="js/modernizr.custom.js"></script>
       <script src='../../../../../www.google.com/recaptcha/api.js'></script>
    </head>
    <body>
-      <!-- Loading animation -->
       <div class="preloader">
          <div class="preloader-animation">
             <div class="dot1"></div>
             <div class="dot2"></div>
          </div>
       </div>
-      <!-- /Loading animation -->
       <div id="page" class="page">
-      <!-- Header -->
       <header id="site_header" class="header">
          <div class="my-photo">
-            <img src="images/avt1234.png" height=""  alt="image">
+            <img src="images/avt.jpg" height=""  alt="image">
             <div class="mask"></div>
          </div>
-         <div class="header-reposive-mobile">
-            <button class="button-more" onclick="handleClickMenu()" > 
-               <i class="gg-menu-grid-o"></i>
-            </button> 
-            <div>
-            <h5 style="margin-left: 45px;margin-bottom: 10px;">Nguyễn Phúc Thịnh<sup> +4 Years of Experience</sup></h5>
+         <div class="header-responsive-mobile">
+            <button class="button-more" onclick="handleClickMenu()">☰ Menu</button>
+            <div class="user-info">
+              <h5>Nguyen Phuc Thinh</h5>
+              <sup>6 Years of Experience</sup>
+            </div>
+          </div>
+         <div class="site-title-block" style="font-weight: 800; background-color: #eee; padding: 1px; border-radius: 15px;">
+            <h1 class="site-title" style="
+               color: black;
+               text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+               ">
+               Nguyễn Phúc Thịnh
+            </h1>
+            <h3 style="
+               color: #333;
+               text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+               ">
+               Software Engineer
+            </h3>
+            <!-- <div style="line-height: 0 !important; font-weight: 800; color: blueviolet !important;">6 Years of Experience</div> -->
+            <div style="display: flex; align-items: center; justify-content: center; margin: 20px;">
+               <!-- Tia sét bên trái -->
+               <span style="font-size: 24px; color: #D32F2F; margin-right: 10px;">⚡</span>
+               <!-- Khung bao và chữ -->
+               <span style="
+                  border: 3px solid #D32F2F;
+                  padding: 8px 16px;
+                  border-radius: 8px;
+                  font-weight: bold;
+                  color: #D32F2F;
+                  font-size: 20px;
+                  background-color: #FFF5F5;
+                  box-shadow: 12px 5px 12px rgba(211, 47, 47, 0.3); /* Đổ bóng đỏ nhạt */
+                  transition: box-shadow 0.9s ease;
+                  ">
+               6 Years of Experience
+               </span>
+               <!-- Tia sét bên phải -->
+               <span style="font-size: 24px; color: #D32F2F; margin-left: 10px;">⚡</span>
+               
             </div>
          </div>
-         <div class="site-title-block" style="font-weight: 800;">
-            <h1 class="site-title" style="color: black">Nguyễn Phúc Thịnh</h1>
-            <h3 >Web Developer</h3>
-            <h5 style="line-height: 0 !important; font-weight: 800;">4 Years of Experience</h5>
-         </div>
-         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-         <div class="site-title-block">
-            <p class="site-description">Birth Day: 10/02/1997</p>
-            <p class="site-description">Sex: Male</p>
-            <p class="site-description"> Birth Place: Ninh Thuan </p>
+         <div class="site-title-block" style="font-weight: 700; padding-top: 400px;">
+            <h3 class="site-description" style="
+               color: #FFF5F5;
+               text-shadow: 1px 1px 2px #FFF5F5;
+               ">
+               Birth Day: 10/02/1997
+            </h3>
+            <h3 class="site-description" style="
+               color: #FFF5F5;
+               text-shadow: 1px 1px 2px #FFF5F5;
+               ">
+               Sex: Male
+            </h3>
          </div>
          <a class="menu-toggle mobile-visible">
          <i class="fa fa-bars"></i>
@@ -88,23 +142,25 @@
       <div id="main" class="site-main">
       <!-- Page changer wrapper -->
       <div class="pt-wrapper">
+      <!-- <div class="site-nav mobile-menu-hide22">1222222222</div> -->
       <!-- Navigation & Social buttons -->
       <div class="site-nav mobile-menu-hide">
          <!-- Main menu -->
+         <img class="mobile-avt" src="images/avt.jpg" height=""  alt="image">
          <ul id="nav" class="site-main-menu">
             <!-- About Me Subpage link -->
+            <li>
+               <a class="pt-trigger" href="#resume" data-animation="59" onclick="handleClickMenu()" data-goto="2">Experience</a>
+            </li>
             <li>
                <a class="pt-trigger" href="#about_me" data-animation="58" onclick="handleClickMenu()" data-goto="1">About me</a><!-- href value = data-id without # of .pt-page -->
             </li>
             <!-- /About Me Subpage link -->
             <li>
-               <a class="pt-trigger" href="#resume" data-animation="59" onclick="handleClickMenu()" data-goto="2">Resume</a>
-            </li>
-            <li>
                <a class="pt-trigger" href="#portfolio" data-animation="60" onclick="handleClickMenu()" data-goto="3">Project for me</a>
             </li>
             <li>
-               <a class="pt-trigger" href="#company" data-animation="60" onclick="handleClickMenu()" data-goto="4">Image company for me</a>
+               <a class="pt-trigger" href="#company" data-animation="60" onclick="handleClickMenu()" data-goto="4"> Journey across great teams (Images)</a>
             </li>
             <li>
                <a class="pt-trigger" href="#contact" data-animation="58" onclick="handleClickMenu()" data-goto="5">Contact</a>
@@ -118,7 +174,7 @@
             <li><a class="tip social-button" href="https://www.facebook.com/phuc.thinh.180072" title="Facebook"><i class="fa fa-facebook"></i></a></li>
             <li><a class="tip social-button" href="https://github.com/phucthinhdh15dt" title="Git"><i class="fa fa-github"></i></a></li>
             <li>
-               <form method="get" action="CV-Nguyen-Phuc-Thinh.pdf">
+               <form method="get" action="NGUYEN-PHUC-THINH-180525.pdf">
                   <button class="button" style="
                      padding-bottom: 4px;
                      font-weight: 800;
@@ -138,9 +194,9 @@
       <!-- Subpages -->
       <div class="subpages">
          <!-- About Me Subpage -->
-         <section class="pt-page pt-page-1" data-id="about_me">
+         <section class="pt-page pt-page-1" data-id="resume">
             <div class="section-title-block">
-               <h2 class="section-title">About Me</h2>
+               <h2 class="section-title">About me</h2>
             </div>
             <div class="row">
                <div class="col-sm-12 col-md-12 mobile-visible subpage-block">
@@ -153,72 +209,22 @@
                      <div class="block-title">
                         <h3>Career Objective</h3>
                      </div>
-                     <p>To be able to work for an encouraging and stable company that will assist me in developing, improving, and obtaining the necessary skills in order to become the best engineer possible .</p>
+                     <p>
+                        With a strong commitment to delivering high-quality results in both product outcomes and code standards, I always strive to complete every assigned task with excellence. My objective is to continuously improve myself through each project, not only in technical skills but also in problem-solving and collaboration. I aim to contribute to the sustainable growth and success of the projects and the company I work for. By aligning personal development with organizational goals, I believe I can become a valuable asset who actively supports innovation, efficiency, and long-term progress.
+                     </p>
                   </div>
                </div>
-               <div class="col-sm-6 col-md-6 subpage-block">
-                  <div class="block-title">
-                     <h3>Slogan</h3>
-                  </div>
-                  <div class="Slogan owl-carousel">
-                     <!-- Testimonial 1 -->
-                     <div class="testimonial-item" style="padding-left: 10px;">
-                        <!-- Testimonial Content -->
-                        <div class="testimonial-content">
-                           <div class="testimonial-text">
-                              <p>Character is the result of two things: mental attitude and the way we spend our time.</p>
-                           </div>
-                        </div>
-                        <!-- /Testimonial Content -->  
-                        <!-- Testimonial Author -->
-                        <div class="testimonial-credits">
-                           <!-- Picture -->
-                           <div class="testimonial-picture">
-                              <img src="images/me/me2.jpg" alt="">
-                           </div>
-                           <!-- /Picture -->
-                           <!-- Testimonial author information -->
-                           <div class="testimonial-author-info">
-                              <p class="testimonial-author">Elbert Hubbard</p>
-                           </div>
-                        </div>
-                        <!-- /Testimonial author information -->               
-                     </div>
-
-                     <div class="testimonial-item" style="padding-left: 10px;">
-                      <!-- Testimonial Content -->
-                      <div class="testimonial-content">
-                         <div class="testimonial-text">
-                            <p>Character is the result of two things: mental attitude and the way we spend our time.</p>
-                         </div>
-                      </div>
-                      <!-- /Testimonial Content -->  
-                      <!-- Testimonial Author -->
-                      <div class="testimonial-credits">
-                         <!-- Picture -->
-                         <div class="testimonial-picture">
-                            <img src="images/me/me1.jpg" alt="">
-                         </div>
-                         <!-- /Picture -->
-                         <!-- Testimonial author information -->
-                         <div class="testimonial-author-info">
-                            <p class="testimonial-author">Elbert Hubbard</p>
-                         </div>
-                      </div>
-                      <!-- /Testimonial author information -->               
-                   </div>
-                     <!-- End of Testimonial 1 -->
-                  </div>
-               </div>
+           
                <div class="col-sm-6 col-md-6 subpage-block">
                   <div class="general-info">
                      <div class="block-title">
-                        <h3>Advantages</h3>
+                        <h3>Strengths</h3>
                      </div>
-                     <p>Socibable</p>
-                     <p>Very happy</p>
-                     <p>Learn new technologies quickly</p>
-                     <p>Reading document english specialized good</p>
+                     <p>Sociable, friendly, and a good team player</p>
+                     <p>Always maintain a positive and optimistic attitude</p>
+                     <p>Quick to learn and adapt to new technologies</p>
+                     <p>Strong ability to read and understand technical documents in English</p>
+                     <p>Good at analyzing and solving problems independently</p>
                   </div>
                </div>
             </div>
@@ -230,7 +236,7 @@
                <div class="col-sm-6 col-md-3 subpage-block">
                   <div class="service-block">
                      <div class="service-info">
-                        <img src="images/service/coding-png.png" alt="Responsive Design">
+                        <img style="height: 350px;" src="images/service/coding-png.png" alt="Responsive Design">
                         <h4>Coding</h4>
                      </div>
                   </div>
@@ -238,7 +244,7 @@
                <div class="col-sm-6 col-md-3 subpage-block">
                   <div class="service-block">
                      <div class="service-info">
-                        <img src="images/service/book1.png" alt="Copywriter">
+                        <img style="height: 350px;" src="images/service/book1.png" alt="Copywriter">
                         <h4>Read Book</h4>
                      </div>
                   </div>
@@ -246,7 +252,7 @@
                <div class="col-sm-6 col-md-3 subpage-block">
                   <div class="service-block">
                      <div class="service-info">
-                        <img src="images/service/tech1.png" alt="Management">
+                        <img style="height: 350px;" src="images/service/tech1.png" alt="Management">
                         <h4>Learn new technology</h4>
                      </div>
                   </div>
@@ -254,9 +260,42 @@
                <div class="col-sm-6 col-md-3 subpage-block">
                   <div class="service-block">
                      <div class="service-info">
-                        <br/>
-                        <img src="images/service/play.png" alt="E-Commerce">
+                        <img style="height: 350px;" src="images/service/play.png" alt="E-Commerce">
                         <h4 style="padding-top:2px;">Going away with my friends</h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block">
+                     <div class="service-info">
+                        <img style="height: 350px;" src="images/service/commu.jpg" alt="Responsive Design">
+                        <h4>Join the developer community</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block">
+                     <div class="service-info">
+                        <img style="height: 350px;" src="images/service/game.jpg" alt="Copywriter">
+                        <h4>Play logic games</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block">
+                     <div style="height: 350px; padding-top: 10px;" class="service-info">
+                        <img src="images/service/ai block.jpg" alt="Management">
+                        <h4>Reseach new tech Blockchain, AI...</h4>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="service-block">
+                     <div style="height: 350px;" class="service-info">
+                        <img src="images/service/music.png" alt="Management">
+                        <h4>Listen to music</h4>
                      </div>
                   </div>
                </div>
@@ -266,7 +305,7 @@
          <!-- Resume Subpage -->
          <section class="pt-page pt-page-2" data-id="resume">
             <div class="section-title-block">
-               <h2 class="section-title">Resume (4+ Years of Experience)</h2>
+               <h2 class="section-title">Resume (6 + Years of Experience)</h2>
             </div>
             <div class="row">
                <div class="col-sm-6 col-md-4 subpage-block">
@@ -274,38 +313,62 @@
                      <h3>Experience</h3>
                   </div>
                   <div class="timeline">
-                     <!-- Single event -->
+                     <!-- Nong Lam University TP.HCM -->
                      <div class="timeline-event te-primary">
-                        <h5 class="event-date">09/2015 - 08/2019 </h5>
-                        <h4 class="event-name">Nong Lam University TP.HCM</h4>
-                        <span class="event-description">Student</span>
-                        <p>- Learn specialized subjects such as Basic Programming, Advanced Programming, Developer Web, Ecommerce ...</p>
-                        <p>- Research, learn blockchain platform and blockchain applications to build human resource management system.
-                     </div>
-                     <div class="timeline-event te-primary">
-                        <h5 class="event-date">05/2018 - 11/2018</h5>
-                        <h4 class="event-name">Proptech Plus</h4>
-                        <span class="event-description">Backend developer internship</span>
-                        <p>I have been in the group for about 6 months to develop an apartment management system using Microservices architecture. I mainly build APIs in the backend and communicate between services ...</p>
+                        <h5 class="event-date">03/2022 - Current</h5>
+                        <h4 class="event-name">Step Media Company</h4>
+                        <span class="event-description">.Net Engineer</span>
+                        <b style="font-size: 0.875em;">Role:</b>
+                        <ul style="font-size: 0.875em;">
+                           <li>Implemented new features based on requirements and resolved bugs during development</li>
+                           <li>Maintained and regularly refactored source code to keep it clean, scalable, and compliant with coding conventions.</li>
+                           <li>Optimized UI and API performance to reduce response time and enhance user experience.</li>
+                           <li>Monitored logs and investigated issues in the staging environment, collaborating with QA to validate and resolve problems before production release.</li>
+                           <li>Participated in code reviews to ensure consistent code quality across the team.</li>
+                           <li>Worked closely with cross-functional teams, including BAs, testers, and backend developers, to implement features effectively. </li>
+                        </ul>
                         <p>
-                           <b>Main skill using in projects at here:</b> <br>
-                           + C# (.Net Core) <br>
-                           + SQL Server <br>
+                           <b>Main skill using in projects Auvenir at here</b> <br>
+                              <ul style="font-size: 0.875em;">
+                                 <li>C#, .NET Core, (.Net Framework)</li>
+                                 <li>ReactJs (React hook, React Component, Redux)</li>
+                                 <li>Microservice architecture</li>
+                                 <li>Sql Server</li>
+                                 <li>Azure Service Bus</li>
+                                 <li>Power BI</li>
+                                 <li>Azure storage</li>
+                                 <li>Azure Application Insights</li>
+                                 <li>SharePoint Online</li>
+                                 <li>Postgre Sql</li>
+                              </ul>
                         </p>
                      </div>
+                     <!-- Nong Lam University TP.HCM -->
+                     <!-- Vinx -->
                      <!-- Single event -->
                      <div class="timeline-event te-primary">
-                        <h5 class="event-date">11/2018 - 03/2020</h5>
-                        <h4 class="event-name"> Company</h4>
-                        <span class="event-description">Developer</span>
-                        <p>Is an official employee of  System, but 100% works at Vinx Vietnam (VVC). Here I have the opportunity to interact and work with Japanese customers, Learn a lot of the entire workflow, ways of thinking, new technologies, teamwork and the culture of Japan.</p>
+                        <h5 class="event-date">03/2020 - 03/2021</h5>
+                        <h4 class="event-name">Evizi Company</h4>
+                        <span class="event-description">Full Stack Developer</span>
+                        <b style="font-size: 0.875em;">Role:</b>
+                           <ul style="font-size: 0.875em;">
+                              <li>At my current job, I work as a Full Stack Developer.</li>
+                              <li>I have been migrating 1 million records of data from the Caspio platform to Azure SQL Server Database include data and image</li>
+                              <li>I joined the project as a team member, contributing to the development of new features, fixing bugs, researching, and estimating complex features.</li>
+                           </ul>
+                        </p>
                         <p>
-                           <b>Main skill using in projects at here:</b> <br>
-                           + Java <br>
-                           + Oracle SQLr <br>
-                           + C#
+                           <b>Main skill using in projects at here:</b>
+                           <ul style="font-size: 0.875em;">
+                              <li>C#, .NET Core</li>
+                              <li>ReactJs (React hook, React Component, Redux)</li>
+                              <li>Monolithic architecture</li>
+                              <li>Sql Server</li>
+                              <li>Azure portal service</li>
+                           </ul>
                         </p>
                      </div>
+                     <!-- Vinx -->
                   </div>
                </div>
                <div class="col-sm-6 col-md-4 subpage-block">
@@ -313,63 +376,69 @@
                      <h3><br></h3>
                   </div>
                   <div class="timeline">
-                     <div class="timeline-event te-primary">
-                        <h5 class="event-date">03/2020 - 03/2021</h5>
-                        <h4 class="event-name">Evizi Company</h4>
-                        <span class="event-description">Full Stack Developer</span>
-                        <p>At here I work in the role of full stack developer and I have been migrating data with 1 million record data from platform Caspio to SQL Server Azure.
-                        </p>
-                        <p>
-                           <b>Main skill using in projects at here:</b> <br>
-                           + C# (.Net Core) <br>
-                           + ReactJS <br>
-                           + SQL Server <br>
-                           + Azure devops
-                        </p>
-                     </div>
+                     <!-- EVZI -->
                      <div class="timeline-event te-primary">
                         <h5 class="event-date">04/2021 - 03/2022</h5>
                         <h4 class="event-name">LogiGear Company</h4>
                         <span class="event-description">Full Stack Developer</span>
-                        <p>At here I work with the role of full stack developer, I have been participation design database, and build system font-end and back-end </p>
+                        <b style="font-size: 0.875em;">Role:</b>
+                        <ul style="font-size: 0.875em;">
+                           <li>In my current role as a Full Stack Developer, I am responsible for designing databases and developing both front-end and back-end components of the system. I also lead a team of 3 developers, managing tasks and ensuring project timelines.</li>
+                           <li>Implemented new features based on requirements and resolved bugs during development</li>
+                           <li>Additionally, I work in a Scrum Agile environment, participating in sprint planning, daily stand-ups, sprint reviews, and retrospectives to ensure continuous improvement and team collaboration</li>
+                        </ul>
                         <p>
                            <b>Main skill using in projects at here:</b> <br>
-                           + Java <br>
-                           + Spring <br>
-                           + Oracle<br>
-                           + VueJs
+                           <ul style="font-size: 0.875em;">
+                              <li>Java</li>
+                              <li>ReactJs (React hook, React Component, Redux)</li>
+                              <li>Spring Framwork</li>
+                              <li>VueJs</li>
+                              <li>Oracle</li>
+                           </ul>
                         </p>
                      </div>
                      <div class="timeline-event te-primary">
-                        <h5 class="event-date">03/2022 - Current</h5>
-                        <h4 class="event-name">MediaStep Company</h4>
-                        <span class="event-description">.Net Engineer</span>
-                        <p>At here I work with the role of full stack developer, I have been participation fix bug and implement new feature of project </p>
+                        <h5 class="event-date">11/2018 - 03/2020</h5>
+                        <h4 class="event-name">Fujinet Company</h4>
+                        <span class="event-description">Developer</span>
+                        <b style="font-size: 0.875em;">Role:</b>
+                        <ul style="font-size: 0.875em;">
+                           <li>Implemented new features based on requirements and resolved bugs during development</li>
+                           <li>Is an official employee of  System, but 100% works at Vinx Vietnam (VVC).</li>
+                           <li>Here I have the opportunity to interact and work with Japanese customers, Learn a lot of the entire workflow, ways of thinking, new technologies, teamwork and the culture of Japan.</li>
+                        </ul>
                         <p>
-                           <b>Main skill using in projects at here:</b> <br>
-                           + C# (.Net Framework) <br>
-                           + Micro service <br>
-                           + Azure devops<br>
-                           + ReactJs<br>
-                           + Sql database 
+                           <b>Main skill using in projects at here:</b>
+                           <ul style="font-size: 0.875em;">
+                              <li>C#</li>
+                              <li>Java</li>
+                              <li>Jsp servlet</li>
+                              <li>Sql Server</li>
+                              <li>Oracle SQL</li>
+                           </ul>
                         </p>
                      </div>
                   </div>
                </div>
                <div class="col-sm-6 col-md-4 subpage-block">
                   <div class="block-title">
-                     <h3>Skills</h3>
+                     <h3>Programming language skills</h3>
                   </div>
                   <div class="skills-info">
-                     <h4>Java Script</h4>
+                     <h4>C#</h4>
                      <div class="skill-container">
                         <div class="skill-percentage skill-8"></div>
                      </div>
-                     <h4>Java</h4>
+                     <h4>SQL Server</h4>
+                     <div class="skill-container">
+                        <div class="skill-percentage skill-8"></div>
+                     </div>
+                     <h4>Postgre Sql</h4>
                      <div class="skill-container">
                         <div class="skill-percentage skill-6"></div>
                      </div>
-                     <h4>C#</h4>
+                     <h4>Java Script</h4>
                      <div class="skill-container">
                         <div class="skill-percentage skill-7"></div>
                      </div>
@@ -377,12 +446,24 @@
                      <div class="skill-container">
                         <div class="skill-percentage skill-5"></div>
                      </div>
+                     <h4>Java</h4>
+                     <div class="skill-container">
+                        <div class="skill-percentage skill-6"></div>
+                     </div>
+                     <h4>Power BI</h4>
+                     <div class="skill-container">
+                        <div class="skill-percentage skill-6"></div>
+                     </div>
                   </div>
                   <div class="block-title">
-                     <h3>Framework Skills</h3>
+                     <h3>Framework skills</h3>
                   </div>
                   <div class="skills-info">
-                     <h4>React</h4>
+                     <h4>.NET Core, .NET Framework</h4>
+                     <div class="skill-container">
+                        <div class="skill-percentage skill-8"></div>
+                     </div>
+                     <h4>React (React Hook, React Component)</h4>
                      <div class="skill-container">
                         <div class="skill-percentage skill-8"></div>
                      </div>
@@ -394,15 +475,15 @@
                      <div class="skill-container">
                         <div class="skill-percentage skill-5"></div>
                      </div>
-                     <h4>.Net Core Framwork</h4>
-                     <div class="skill-container">
-                        <div class="skill-percentage skill-5"></div>
-                     </div>
                   </div>
                   <div class="block-title">
-                     <h3>Skills other...</h3>
+                     <h3>Skills other</h3>
                   </div>
                   <div class="skills-info">
+                     <h4>Using AI to support and accelerate work tasks</h4>
+                     <div class="skill-container">
+                        <div class="skill-percentage skill-7"></div>
+                     </div>
                      <h4>Team work</h4>
                      <div class="skill-container">
                         <div class="skill-percentage skill-8"></div>
@@ -410,6 +491,29 @@
                      <h4>Git, Git lab</h4>
                      <div class="skill-container">
                         <div class="skill-percentage skill-7"></div>
+                     </div>
+                     <h4>Problem-solving </h4>
+                     <div class="skill-container">
+                        <div class="skill-percentage skill-7"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-6 col-md-4 subpage-block">
+                  <div class="block-title">
+                     <h3>Education</h3>
+                  </div>
+                  <div class="timeline">
+                     <!-- Nong Lam University TP.HCM -->
+                     <div class="timeline-event te-primary">
+                        <h5 class="event-date">09/2015 - 08/2019 </h5>
+                        <h4 class="event-name">Nong Lam University TP.HCM</h4>
+                        <span class="event-description">Student</span>
+                        <ul style="font-size: 0.875em;">
+                           <li>Learn specialized subjects such as Basic Programming, Advanced Programming, Developer Web, Ecommerce ...</li>
+                           <li>Research, learn blockchain platform and blockchain applications to build human resource management system.</li>
+                        </ul>
                      </div>
                   </div>
                </div>
@@ -419,7 +523,7 @@
          <!-- Portfolio Subpage -->
          <section class="pt-page pt-page-4" data-id="portfolio">
             <div class="section-title-block">
-               <h2 class="section-title">Project for me</h2>
+               <h2 class="section-title">My Project (when I was in school)</h2>
             </div>
             <!-- Portfolio Content -->
             <div class="portfolio-content">
@@ -627,199 +731,28 @@
          <!-- /Portfolio Subpage -->
          <section class="pt-page pt-page-3" data-id="company">
             <div class="section-title-block">
-               <h2 class="section-title">Image company for me</h2>
+               <h2 class="section-title"> Journey across great teams (Images)</h2>
             </div>
             <!-- Portfolio Content -->
             <div class="portfolio-content">
                <!-- Portfolio Grid -->
-               <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-4">
-                  <!-- Portfolio Item 1 -->
-                  <figure class="item" data-groups='["evizi"]'>
-                     <a href="images/company/evizi/ev1.jpg" class="lightbox" title="">
-                        <img src="images/company/evizi/ev1.jpg" alt="">
-                        <div>
-                           <i class="fa fa-image"></i>    
-                        </div>
-                     </a>
-                  </figure>
-                  <!-- /Portfolio Item 1 -->
-                  <!-- Portfolio Item 2 -->
-                  <figure class="item" data-groups='["evizi"]'>
-                     <a href="images/company/evizi/ev2.jpg" class="lightbox" title="">
-                        <img src="images/company/evizi/ev2.jpg" alt="">
-                        <div>
-                           <i class="fa fa-image"></i>
-                        </div>
-                     </a>
-                  </figure>
-                  <!-- /Portfolio Item 2 -->
-                  <!-- Portfolio Item 3 -->
-                  <figure class="item" data-groups='[""]'>
-                     <a href="images/company/fj/fj1.jpg" class="lightbox" title="">
-                        <img src="images/company/fj/fj1.jpg" alt="">
-                        <div>
-                           <div>
-                              <i class="fa fa-image"></i>
-                           </div>
-                     </a>
-                  </figure>
-                  <!-- /Portfolio Item 3 -->
-                  <!-- Portfolio Item 4 -->
-                  <figure class="item" data-groups='[""]'>
-                  <a href="images/company/fj/fj2.jpg" class="lightbox" title="">
-                  <img src="images/company/fj/fj2.jpg" alt="">
-                  <div>
-                  <i class="fa fa-image"></i>
-                  </div>
-                  </a>
-                  </figure>
-                  <!-- /Portfolio Item 4 -->
-                  <!-- Portfolio Item 5 -->
-                  <figure class="item" data-groups='[""]'>
-                  <a href="images/company/fj/fj3.jpg" class="lightbox" title="">
-                  <img src="images/company/fj/fj3.jpg" alt="">
-                  <div>
-                  <i class="fa fa-image"></i>
-                  </div>
-                  </a>
-                  </figure>
-                  <!-- /Portfolio Item 5 -->
-                  <!-- Portfolio Item 6 -->
-                  <figure class="item" data-groups='[""]'>
-                  <a href="images/company/fj/fj4.jpg" class="lightbox" title="">
-                  <img src="images/company/fj/fj4.jpg" alt="">
-                  <div>
-                  <i class="fa fa-image"></i>
-                  </div>
-                  </a>
-                  </figure>
-                  <!-- /Portfolio Item 6 -->
-                  <!-- Portfolio Item 7 -->
-                  <figure class="item" data-groups='[""]'>
-                  <a href="images/company/fj/fj5.jpg" class="lightbox" title="">
-                  <img src="images/company/fj/fj5.jpg" alt="">
-                  <div>
-                  <i class="fa fa-image"></i>
-                  </div>
-                  </a>
-                  </figure>
-                  <!-- /Portfolio 
-                     <!-- /Portfolio Item 7 -->
-                  <figure class="item" data-groups='["ms"]'>
-                  <a href="images/company/ms/st1.png" class="lightbox" title="">
-                  <img src="images/company/ms/st1.png" alt="">
-                  <div>
-                  <i class="fa fa-image"></i>
-                  </div>
-                  </a>
-                  </figure>
-                  <!-- /Portfolio 
-                     <!-- /Portfolio Item 8 -->
-                  <!-- Portfolio Item 9 -->
-                  <figure class="item" data-groups='["ms"]'>
-                  <a href="images/company/ms/st2.png" class="lightbox" title="">
-                  <img src="images/company/ms/st2.png" alt="">
-                  <div>
-                  <div>
-                  <i class="fa fa-image"></i>
-                  </div>
-                  </a>
-                  </figure>
-                  <!-- /Portfolio 
-                     <!-- /Portfolio Item 9 -->
-                  <!-- Portfolio Item 10 -->
-                  <figure class="item" data-groups='["ms"]'>
-                  <a href="images/company/ms/st3.jpg" class="lightbox" title="">
-                  <img src="images/company/ms/st3.jpg" alt="">
-                  <div>
-                  <div>
-                  <i class="fa fa-image"></i>
-                  </div>
-                  </a>
-                  </figure>
-                  <!-- /Portfolio 
-                     <!-- /Portfolio Item 10 -->
-                  <!-- Portfolio Item 11 -->
-                  <figure class="item" data-groups='["ms"]'>
-                  <a href="images/company/ms/st4.jpg" class="lightbox" title="">
-                  <img src="images/company/ms/st4.jpg" alt="">
-                  <div>
-                  <i class="fa fa-image"></i>
-                  </div>
-                  </a>
-                  </figure>
-                  <!-- /Portfolio 
-                     <!-- /Portfolio Item 11 -->
-                  <figure class="item" data-groups='["ms"]'>
-                  <a href="images/company/ms/st5.jpg" class="lightbox" title="">
-                  <img src="images/company/ms/st5.jpg" alt="">
-                  <div>
-                  <i class="fa fa-image"></i>
-                  </div>
-                  </a>
-                  </figure>
-                  </div>
-                  <!-- /Portfolio Grid -->
-                  </div>
-                  <!-- /Portfolio Content -->
+               <iframe src="photos.html" style="border:none; width:100%; height:600px;"></iframe>
+            </div>
          </section>
          <section class="pt-page pt-page-5" data-id="contact">
          <div class="section-title-block">
          <h2 class="section-title">Contact</h2>
-         <h5 class="section-description">Get in Touch</h5>
          </div>
          <div class="row">
          <div class="col-sm-12 col-md-12 subpage-block">
-         <div class="block-title">
-         <h3>Get in Touch</h3>
-         </div>
-         <div class="contact-info-block">
-         <div class="ci-icon">
-         <i class="pe-7s-icon pe-7s-map-marker"></i>
-         </div>
-         <div class="ci-text">
-         <h5>54 Trương Đăng Quế - Phường 1 - Gò Vấp - TPHCM </h5>
-         </div>
-         </div>
-         <div class="contact-info-block">
-         <div class="ci-icon">
-         <i class="pe-7s-icon pe-7s-mail"></i>
-         </div>
-         <div class="ci-text">
-         <h5>nguyenphucthinhdh15dt@gmail.com</h5>
-         </div>
-         </div>
-         <div class="contact-info-block">
-         <div class="ci-icon">
-         <i class="pe-7s-icon pe-7s-call"></i>
-         </div>
-         <div class="ci-text">
-         <h5>+0377700492</h5>
-         </div>
-         </div>
+            <iframe src="contact.html" style="border:none; width:100%; height:600px;"></iframe>
          </div>
          </div>
          </section>
-         <!-- End Contact Subpage -->
          </div>
          </div>
-         <!-- /Page changer wrapper -->
          </div>
-         <!-- /Main Content -->
       </div>
-      <!-- Demo Color changer -->
-      <!-- <a id="lm_demo_panel_switcher" class="lm-demo-panel-switcher right"><i class="fa fa-gear"></i></a> -->
-      <!-- <div id="lm_demo_panel" class="lm-demo-panel right active">
-         <div class="demo-panel-title">Main Color</div>
-         <a href="index.html"><div class="preview" id="color1"><span class="current"></span>&nbsp;</div></a>
-         <a href="https://lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template-red/index.html"><div class="preview" id="color2">&nbsp;</div></a>
-         <a href="https://lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template-green-cyan/index.html"><div class="preview" id="color3">&nbsp;</div></a>
-         <a href="https://lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template-violet/index.html"><div class="preview" id="color4">&nbsp;</div></a>
-         <a href="https://lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template-orange/index.html"><div class="preview" id="color5">&nbsp;</div></a>
-         <a href="https://lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template-blue/index.html"><div class="preview" id="color6">&nbsp;</div></a>
-         <div class="row"></div>
-         </div> -->
-      <!-- /Demo Color changer -->
       <script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/bootstrap.min.js"></script>
       <script src="js/page-transition.js"></script>
       <script src="js/imagesloaded.pkgd.min.js"></script>
@@ -830,7 +763,6 @@
       <script src="js/jquery.magnific-popup.min.js"></script>
       <script src="js/jquery.hoverdir.js"></script>
       <script src="js/main.js"></script>
-
       <script>
          function handleClickMenu() {
             var element = document.getElementsByClassName("site-main")[0];
@@ -841,13 +773,10 @@
                element.classList.add("add-menu-custom");
             }
             
-}
-
-
+         }
+         
+         
       </script>
-      <!-- Demo Color changer Script -->
       <script src="preview/lmpixels-demo-panel.js"></script>
-      <!-- /Demo Color changer Script -->
    </body>
-   <!-- Mirrored from lmpixels.com/demo/sunshine-demo/sunshine-version-1/sunshine-v1-html-template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Jan 2020 14:02:32 GMT -->
 </html>
